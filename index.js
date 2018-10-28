@@ -22,7 +22,7 @@ bot.on("message", function(message) {
 
     switch (args[0].toLowerCase()) {
         case "ping":
-        message.channel.sendMessage(':ping_pong: `' + `${message.createdTimestamp Date.now()}` + ' ms`');
+        message.channel.sendMessage(':ping_pong: `' + `${message.createdTimestamp - Date.now()}` + ' ms`');
         break;
         case "quidol":
             var embed = new Discord.RichEmbed()
