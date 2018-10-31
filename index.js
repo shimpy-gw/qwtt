@@ -53,7 +53,7 @@ bot.on("message", function(message) {
             .setTitle("The Game va commencer dans quelques minutes..")
             .setDescription("Preparez-vous, le jeu The Game va commencer dans quelques minutes. Assurez-vous d'avoir une bonne connexion internet !")
             .addField("Temps de latence", "`ping` - Votre ping entre vous et la conversation discord")
-            .addField("Liens utiles", "[Lien de téléchargement de The Game](https://play.google.com/store/apps/details?id=com.thegame.app.prod) \n [L'adresse mail de The Game](admin.mobile@webedia-group.com)")
+            .addField("Liens utiles", "[Lien de téléchargement de The Game](https://play.google.com/store/apps/details?id=com.thegame.app.prod)")
             .setColor("#2200FE")
             .setFooter("QWCT - TRIVIA")
             .setThumbnail("https://lh3.googleusercontent.com/Brjn5pZhva2N81Pjg1K677ZOxsTUelqgifG812f7qR3TXzN74u29agFYlPpdZbbsCrM=s180-rw")
