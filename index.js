@@ -7,7 +7,6 @@ var bot = new Discord.Client();
 var servers = {};
 
 bot.on("ready", function() {
-    bot.user.setGame("à faire du cash")
     bot.user.setStatus("dnd");
     console.log("Ready");
 });
@@ -21,10 +20,10 @@ bot.on("message", function(message) {
     var args = message.content.substring(PREFIX.length).split(" ");
 
     switch (args[0].toLowerCase()) {
-        case "ping":
+        case "":
         message.channel.sendMessage(':ping_pong: `' + `${message.createdTimestamp - Date.now()}` + ' ms`');
         break;
-        case "quidol":
+        case "":
             var embed = new Discord.RichEmbed()
                 .setTitle("Quidol va commencer dans quelques minutes..")
                 .setDescription("Preparez-vous, le jeu Quidol va commencer dans quelques minutes. Assurez-vous d'avoir une bonne connexion internet !")
@@ -36,7 +35,7 @@ bot.on("message", function(message) {
                 .setTimestamp()
             message.channel.sendEmbed(embed);
             break;
-        case "wizzup":
+        case "":
             var embed = new Discord.RichEmbed()
             .setTitle("Wizzup va commencer dans quelques minutes..")
             .setDescription("Preparez-vous, le jeu Wizzup va commencer dans quelques minutes. Assurez-vous d'avoir une bonne connexion internet !")
@@ -48,7 +47,7 @@ bot.on("message", function(message) {
             .setTimestamp()
         message.channel.sendEmbed(embed);
         break;
-      case "thegame":
+      case "":
             var embed = new Discord.RichEmbed()
             .setTitle("The Game va commencer dans quelques minutes..")
             .setDescription("Preparez-vous, le jeu The Game va commencer dans quelques minutes. Assurez-vous d'avoir une bonne connexion internet !")
