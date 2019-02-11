@@ -7,7 +7,6 @@ var bot = new Discord.Client();
 var servers = {};
 
 bot.on("ready", function() {
-    bot.user.setGame("à faire du cash")
     bot.user.setStatus("dnd");
     console.log("Ready");
 });
