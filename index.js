@@ -65,8 +65,7 @@ bot.on("message", function(message) {
         message.guild.member(message.mentions.users.first()).addRole("544966634117267477").catch(error => console.log(error));
         var embed = new Discord.RichEmbed()
             .setTitle("**Votre rôle à été attribué avec succès !**")
-            .setDescription("Vous pouvez maintenant accéder au salon afin de jouer au jeu Ripkord avec les autres personnes du serveur.")
-            .setFooter("QWCT - TRIVIA", "https://images-ext-1.discordapp.net/external/W1S1SZLT4Wa-cwzXEumAO1AapV3Zf_S3tABRNbIlYfg/https/cdn.discordapp.com/icons/513074574011924510/299e80beb8a5a80deb5b9f6b79caedca.png")
+            .setFooter("QWCT - TRIVIA", "https://thumbs.gfycat.com/CourteousPhonyHorsemouse-small.gif")
             .setTimestamp()
             .setColor("#64FF00")
         message.channel.sendEmbed(embed);
