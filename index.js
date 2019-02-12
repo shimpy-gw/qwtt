@@ -60,6 +60,37 @@ bot.on("message", function(message) {
         message.channel.sendEmbed(embed);
         break;
     }
+    
+            var embed = new Discord.RichEmbed()
+        .setTitle("**Le salon à été supprimé avec succès !**")
+        .setDescription("Votre demande à été effectuer avec succès.")
+        .setFooter("Lyna", "https://images-ext-2.discordapp.net/external/1rJFsJ6FFj2YiokdTVMqDtONA_XNUu1m48fEqo4Myvc/https/www.semanadamulherbemresolvida.com.br/wp-content/uploads/2018/02/checkmark.gif")
+        .setTimestamp()
+        .setColor("#00E20F")
+        message.author.sendEmbed(embed);
+    }
+
+    if (message.content.startsWith(PREFIX + "creatrole")) {
+        message.guild.createRole({name: "Membres", color:"8BFF00", permissions:"ADMINISTRATOR", mentionable:true}).catch(error => console.log(error));
+        var embed = new Discord.RichEmbed()
+            .setTitle("**Votre rôle à été crée avec succès !**")
+            .setDescription("Vous pouvez supprimer votre rôle à partir des paramètres du serveur.")
+            .setFooter("Lyna", "https://images-ext-2.discordapp.net/external/1rJFsJ6FFj2YiokdTVMqDtONA_XNUu1m48fEqo4Myvc/https/www.semanadamulherbemresolvida.com.br/wp-content/uploads/2018/02/checkmark.gif")
+            .setTimestamp()
+            .setColor("#00E20F")
+        message.channel.sendEmbed(embed);
+    }
+
+    if (message.content.startsWith(PREFIX + "giverole")) {
+        message.guild.member(message.mentions.users.first()).addRole("519970822069420032").catch(error => console.log(error));
+        var embed = new Discord.RichEmbed()
+            .setTitle("**Votre rôle à été attribué avec succès !**")
+            .setDescription("Vous pouvez supprimer votre rôle à partir des paramètres du serveur.")
+            .setFooter("Lyna", "https://images-ext-2.discordapp.net/external/1rJFsJ6FFj2YiokdTVMqDtONA_XNUu1m48fEqo4Myvc/https/www.semanadamulherbemresolvida.com.br/wp-content/uploads/2018/02/checkmark.gif")
+            .setTimestamp()
+            .setColor("#00E20F")
+        message.channel.sendEmbed(embed);
+    }
 });
 
 bot.login(process.env.TOKEN);
