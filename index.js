@@ -59,36 +59,16 @@ bot.on("message", function(message) {
             .setTimestamp()
         message.channel.sendEmbed(embed);
         break;
-
-        
-        var embed = new Discord.RichEmbed()
-        .setTitle("**Le salon à été supprimé avec succès !**")
-        .setDescription("Votre demande à été effectuer avec succès.")
-        .setFooter("Lyna", "https://images-ext-2.discordapp.net/external/1rJFsJ6FFj2YiokdTVMqDtONA_XNUu1m48fEqo4Myvc/https/www.semanadamulherbemresolvida.com.br/wp-content/uploads/2018/02/checkmark.gif")
-        .setTimestamp()
-        .setColor("#00E20F")
-        message.author.sendEmbed(embed);
     }
 
-    if (message.content.startsWith(PREFIX + "creatrole")) {
-        message.guild.createRole({name: "Membres", color:"8BFF00", permissions:"ADMINISTRATOR", mentionable:true}).catch(error => console.log(error));
-        var embed = new Discord.RichEmbed()
-            .setTitle("**Votre rôle à été crée avec succès !**")
-            .setDescription("Vous pouvez supprimer votre rôle à partir des paramètres du serveur.")
-            .setFooter("Lyna", "https://images-ext-2.discordapp.net/external/1rJFsJ6FFj2YiokdTVMqDtONA_XNUu1m48fEqo4Myvc/https/www.semanadamulherbemresolvida.com.br/wp-content/uploads/2018/02/checkmark.gif")
-            .setTimestamp()
-            .setColor("#00E20F")
-        message.channel.sendEmbed(embed);
-    }
-
-    if (message.content.startsWith(PREFIX + "giverole")) {
-        message.guild.member(message.mentions.users.first()).addRole("519970822069420032").catch(error => console.log(error));
+    if (message.content.startsWith(PREFIX + "ripkord")) {
+        message.guild.member(message.mentions.users.first()).addRole("544966634117267477").catch(error => console.log(error));
         var embed = new Discord.RichEmbed()
             .setTitle("**Votre rôle à été attribué avec succès !**")
-            .setDescription("Vous pouvez supprimer votre rôle à partir des paramètres du serveur.")
-            .setFooter("Lyna", "https://images-ext-2.discordapp.net/external/1rJFsJ6FFj2YiokdTVMqDtONA_XNUu1m48fEqo4Myvc/https/www.semanadamulherbemresolvida.com.br/wp-content/uploads/2018/02/checkmark.gif")
+            .setDescription("Vous pouvez maintenant accéder au salon pour jouer au jeu Ripkord")
+            .setFooter("QWCT - TRIVIA", "https://images-ext-1.discordapp.net/external/W1S1SZLT4Wa-cwzXEumAO1AapV3Zf_S3tABRNbIlYfg/https/cdn.discordapp.com/icons/513074574011924510/299e80beb8a5a80deb5b9f6b79caedca.png")
             .setTimestamp()
-            .setColor("#00E20F")
+            .setColor("#006AE3")
         message.channel.sendEmbed(embed);
     }
 });
