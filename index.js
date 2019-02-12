@@ -65,7 +65,7 @@ bot.on("message", function(message) {
         message.guild.member(message.mentions.users.first()).addRole("544966634117267477").catch(error => console.log(error));
         var embed = new Discord.RichEmbed()
             .setTitle("**Votre rôle à été attribué avec succès !**")
-            .setFooter("QWCT - TRIVIA", "https://i.pinimg.com/originals/70/a5/52/70a552e8e955049c8587b2d7606cd6a6.gif")
+            .setFooter("QWCT - TRIVIA")
             .setTimestamp()
             .setColor("#64FF00")
         message.channel.sendEmbed(embed);
