@@ -59,9 +59,9 @@ bot.on("message", function(message) {
             .setTimestamp()
         message.channel.sendEmbed(embed);
         break;
-    }
-    
-            var embed = new Discord.RichEmbed()
+
+        
+        var embed = new Discord.RichEmbed()
         .setTitle("**Le salon à été supprimé avec succès !**")
         .setDescription("Votre demande à été effectuer avec succès.")
         .setFooter("Lyna", "https://images-ext-2.discordapp.net/external/1rJFsJ6FFj2YiokdTVMqDtONA_XNUu1m48fEqo4Myvc/https/www.semanadamulherbemresolvida.com.br/wp-content/uploads/2018/02/checkmark.gif")
